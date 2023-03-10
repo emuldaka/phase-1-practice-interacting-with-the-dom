@@ -53,6 +53,8 @@ heart.addEventListener("click", function () {
 
 const pauseBtn = document.getElementById("pause");
 
+timerId = timer();
+
 pauseBtn.addEventListener("click", function () {
   if (timerId) {
     clearInterval(timerId);
